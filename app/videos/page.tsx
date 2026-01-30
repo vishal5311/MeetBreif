@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { createClient } from "@/lib/supabase-server";
 import { Search, Filter } from "lucide-react";
 import { redirect } from "next/navigation";

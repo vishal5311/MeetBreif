@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { createClient } from "@/lib/supabase-server";
 import { getSubscriptionStatus } from "@/lib/subscription";
 import { Video, Clock, TrendingUp, Sparkles, Upload } from "lucide-react";
