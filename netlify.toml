@@ -3,13 +3,20 @@
   publish = ".next"
 
 [build.environment]
-  NEXT_USE_NETLIFY_EDGE = "true"
   NODE_VERSION = "20"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
 [functions]
-  node_bundle = true
-  external_node_modules = ["@remotion/renderer", "@remotion/bundler", "esbuild", "ffmpeg-static", "ffprobe-static"]
-  included_files = ["node_modules/ffmpeg-static/**/*", "node_modules/ffprobe-static/**/*"]
+  external_node_modules = [
+    "@remotion/renderer",
+    "@remotion/bundler",
+    "esbuild",
+    "ffmpeg-static",
+    "ffprobe-static"
+  ]
+  included_files = [
+    "node_modules/ffmpeg-static/**",
+    "node_modules/ffprobe-static/**"
+  ]
